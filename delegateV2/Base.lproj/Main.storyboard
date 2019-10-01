@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="delegateV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="野菜の名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xd-of-Wcx">
+                                <rect key="frame" x="20" y="194" width="87" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jvz-OI-aLW">
+                                <rect key="frame" x="20" y="224.5" width="335" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vE2-gy-NPg">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5g-UI-F3w">
+                                        <rect key="frame" x="304" y="0.0" width="31" height="34"/>
+                                        <state key="normal" title="選ぶ"/>
+                                        <connections>
+                                            <action selector="btnChon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RzV-Az-SDu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="野菜のコード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdy-nG-Pjg">
+                                <rect key="frame" x="20" y="288" width="104" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="書類の野菜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zl1-Oc-LNe">
+                                <rect key="frame" x="105" y="100" width="165" height="37"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tnz-eh-C2c">
+                                <rect key="frame" x="20" y="327.5" width="335" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Tnz-eh-C2c" firstAttribute="top" secondItem="Kdy-nG-Pjg" secondAttribute="bottom" constant="19" id="1hh-6x-hHT"/>
+                            <constraint firstItem="Zl1-Oc-LNe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7Um-iN-FDy"/>
+                            <constraint firstItem="1xd-of-Wcx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Cdt-PQ-hyE"/>
+                            <constraint firstItem="Tnz-eh-C2c" firstAttribute="width" secondItem="jvz-OI-aLW" secondAttribute="width" id="Cyi-hO-f0s"/>
+                            <constraint firstItem="Kdy-nG-Pjg" firstAttribute="leading" secondItem="vE2-gy-NPg" secondAttribute="leading" id="DU4-aU-XEG"/>
+                            <constraint firstItem="jvz-OI-aLW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L7B-2u-aR2"/>
+                            <constraint firstItem="1xd-of-Wcx" firstAttribute="firstBaseline" secondItem="Zl1-Oc-LNe" secondAttribute="baseline" constant="80" id="NPS-x6-4QT"/>
+                            <constraint firstItem="Tnz-eh-C2c" firstAttribute="centerX" secondItem="jvz-OI-aLW" secondAttribute="centerX" id="Pop-6L-OEF"/>
+                            <constraint firstItem="Kdy-nG-Pjg" firstAttribute="top" secondItem="jvz-OI-aLW" secondAttribute="bottom" constant="29.5" id="Qwj-U5-fpO"/>
+                            <constraint firstItem="Zl1-Oc-LNe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="auH-RL-sT8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jvz-OI-aLW" secondAttribute="trailing" constant="20" id="cqt-Bm-s8t"/>
+                            <constraint firstItem="jvz-OI-aLW" firstAttribute="top" secondItem="1xd-of-Wcx" secondAttribute="bottom" constant="10" id="hYS-HF-6Qj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtCode" destination="Tnz-eh-C2c" id="Ey5-sJ-MNT"/>
+                        <outlet property="txtName" destination="vE2-gy-NPg" id="mBw-lU-neF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+        <!--Screen San Pham View Controller-->
+        <scene sceneID="1nd-nI-3xT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Yk-h2-Acv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ManHinhSanPham" id="v0g-gH-nOa" customClass="ScreenSanPhamViewController" customModule="delegateV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tyV-gw-J8b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="書類の下から選びなさい" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="684-bN-Xgd">
+                                <rect key="frame" x="50" y="111" width="275" height="25"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e60-ae-i9z">
+                                <rect key="frame" x="16" y="155" width="343" height="492"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellSp" textLabel="veb-Yk-VkV" detailTextLabel="o1r-4g-PKt" rowHeight="76" style="IBUITableViewCellStyleSubtitle" id="brr-Z1-Spo">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="brr-Z1-Spo" id="Akv-0G-uTV">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="veb-Yk-VkV">
+                                                    <rect key="frame" x="15" y="17" width="38.5" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o1r-4g-PKt">
+                                                    <rect key="frame" x="15" y="38" width="39.5" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="684-bN-Xgd" firstAttribute="centerX" secondItem="D4P-rD-0t8" secondAttribute="centerX" id="JQL-9l-Ja3"/>
+                            <constraint firstItem="684-bN-Xgd" firstAttribute="top" secondItem="D4P-rD-0t8" secondAttribute="top" constant="111" id="Tlj-0t-SSz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D4P-rD-0t8"/>
+                    </view>
+                    <connections>
+                        <outlet property="tblChonSanPham" destination="e60-ae-i9z" id="UoH-Rj-yRU"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="783.20000000000005" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+</document>
